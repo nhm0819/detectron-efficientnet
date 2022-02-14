@@ -1,1 +1,3 @@
-# detectron-efficientnet
+# flask training
+
+### detectron2 + efficientnet
