@@ -1,0 +1,9 @@
+# pip install -r requirements.txt
+
+# Base ----------------------------------------
+timm
+albumentations
+tqdm
+tensorboard
+pandas
+scikit-learn

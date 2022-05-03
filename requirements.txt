@@ -1,0 +1,19 @@
+# pip install -r requirements.txt
+
+### cannot install use with pip ---------------
+# detectron2
+# pytorch
+# torchvision
+
+
+# Base ----------------------------------------
+timm
+albumentations
+tqdm
+tensorboard
+pandas
+scikit-learn
+flask
+flask_cors
+mysql-connector
+waitress

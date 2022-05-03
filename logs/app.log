@@ -1,0 +1,1454 @@
+[2022-02-17 15:33:24,400] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 172, in train
+IndexError: list index out of range
+[2022-02-17 15:33:24,400] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 172, in train
+IndexError: list index out of range
+[2022-02-18 13:57:46,190] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 178, in train
+    clf_weight_path = glob.glob(os.path.join(clf_folder, "*.weights"))[-1].replace("\\", "/")
+IndexError: list index out of range
+[2022-02-18 13:57:46,190] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 178, in train
+    clf_weight_path = glob.glob(os.path.join(clf_folder, "*.weights"))[-1].replace("\\", "/")
+IndexError: list index out of range
+[2022-02-18 13:57:46,190] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 178, in train
+    clf_weight_path = glob.glob(os.path.join(clf_folder, "*.weights"))[-1].replace("\\", "/")
+IndexError: list index out of range
+[2022-02-18 14:13:57,509] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 179, in train
+    clf_weight_path = glob.glob(os.path.join(clf_folder, "*.weights"))[-1].replace("\\", "/")
+IndexError: list index out of range
+[2022-02-18 14:13:57,509] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 179, in train
+    clf_weight_path = glob.glob(os.path.join(clf_folder, "*.weights"))[-1].replace("\\", "/")
+IndexError: list index out of range
+[2022-02-18 15:17:12,288] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 335, in check_progress
+    percentage = str(int(lastest_iter / 20000 * 100 * 0.5) + 1)  # total iteration = 20000
+UnboundLocalError: local variable 'lastest_iter' referenced before assignment
+[2022-02-18 15:19:03,123] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 335, in check_progress
+    percentage = str(int(lastest_iter / 20000 * 100 * 0.5) + 1)  # total iteration = 20000
+UnboundLocalError: local variable 'lastest_iter' referenced before assignment
+[2022-02-18 15:19:55,176] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 335, in check_progress
+    percentage = str(int(lastest_iter / 20000 * 100 * 0.5) + 1)  # total iteration = 20000
+UnboundLocalError: local variable 'lastest_iter' referenced before assignment
+[2022-02-18 15:22:05,350] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 335, in check_progress
+    latest_epoch = 0
+UnboundLocalError: local variable 'lastest_iter' referenced before assignment
+[2022-02-18 15:28:35,095] ERROR in app: Exception on /stop [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 220, in training_stop
+    weight_id = json_data["weightid"]
+KeyError: 'weightid'
+[2022-02-18 15:30:35,351] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 179, in train
+    clf_weight_path = glob.glob(os.path.join(clf_folder, "*.weights"))[-1].replace("\\", "/")
+IndexError: list index out of range
+[2022-02-18 15:40:45,286] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 179, in train
+    clf_weight_path = glob.glob(os.path.join(clf_folder, "*.weights"))[-1].replace("\\", "/")
+IndexError: list index out of range
+[2022-02-18 15:40:45,286] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 179, in train
+    clf_weight_path = glob.glob(os.path.join(clf_folder, "*.weights"))[-1].replace("\\", "/")
+IndexError: list index out of range
+[2022-02-18 15:40:45,286] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 179, in train
+    clf_weight_path = glob.glob(os.path.join(clf_folder, "*.weights"))[-1].replace("\\", "/")
+IndexError: list index out of range
+[2022-02-18 15:56:48,776] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 181, in train
+    clf_weight_path = glob.glob(os.path.join(clf_folder, "*.weights"))[-1].replace("\\", "/")
+IndexError: list index out of range
+[2022-02-18 15:56:48,776] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 181, in train
+    clf_weight_path = glob.glob(os.path.join(clf_folder, "*.weights"))[-1].replace("\\", "/")
+IndexError: list index out of range
+[2022-02-18 16:03:26,384] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 155, in train
+    out, error_msg = train_proc.communicate(stdout=subprocess.PIPE)   # 432000 sec = 5 days
+TypeError: communicate() got an unexpected keyword argument 'stdout'
+[2022-02-18 16:10:01,109] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 181, in train
+    clf_weight_path = glob.glob(os.path.join(clf_folder, "*.weights"))[-1].replace("\\", "/")
+IndexError: list index out of range
+[2022-02-18 16:25:14,780] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 161, in train
+    training_stop(session_id=session_id, weight_id=weight_id, training_error=True)
+  File "C:\Users\Admin\kesco_training\app.py", line 242, in training_stop
+    clf_folder = os.path.join(train_result, "efficientnet", create_time)
+NameError: name 'train_result' is not defined
+[2022-02-18 16:25:14,780] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 161, in train
+    training_stop(session_id=session_id, weight_id=weight_id, training_error=True)
+  File "C:\Users\Admin\kesco_training\app.py", line 242, in training_stop
+    clf_folder = os.path.join(train_result, "efficientnet", create_time)
+NameError: name 'train_result' is not defined
+[2022-02-18 16:28:31,727] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 160, in train
+    training_stop(session_id=session_id, weight_id=weight_id, training_error=True)
+  File "C:\Users\Admin\kesco_training\app.py", line 244, in training_stop
+    clf_folder = os.path.join(train_result, "efficientnet", create_time)
+NameError: name 'train_result' is not defined
+[2022-02-18 16:28:31,727] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 160, in train
+    training_stop(session_id=session_id, weight_id=weight_id, training_error=True)
+  File "C:\Users\Admin\kesco_training\app.py", line 244, in training_stop
+    clf_folder = os.path.join(train_result, "efficientnet", create_time)
+NameError: name 'train_result' is not defined
+[2022-02-18 16:40:13,966] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 161, in train
+    training_stop(session_id=session_id, weight_id=weight_id, training_error=True)
+  File "C:\Users\Admin\kesco_training\app.py", line 243, in training_stop
+    clf_folder = os.path.join(g.TRAIN_RESULTS, "efficientnet", create_time)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\ntpath.py", line 117, in join
+    genericpath._check_arg_types('join', path, *paths)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\genericpath.py", line 152, in _check_arg_types
+    raise TypeError(f'{funcname}() argument must be str, bytes, or '
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'datetime'
+[2022-02-18 16:42:46,415] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 161, in train
+    training_stop(session_id=session_id, weight_id=weight_id, training_error=True)
+  File "C:\Users\Admin\kesco_training\app.py", line 246, in training_stop
+    shutil.rmtree(clf_folder)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-02-15_17h49m07s'
+[2022-02-18 16:42:46,415] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 161, in train
+    training_stop(session_id=session_id, weight_id=weight_id, training_error=True)
+  File "C:\Users\Admin\kesco_training\app.py", line 246, in training_stop
+    shutil.rmtree(clf_folder)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-02-15_17h49m07s'
+[2022-03-02 14:12:34,234] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1514, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1857, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "C:\Users\Admin\kesco_training\app.py", line 52, in before_request
+    f = open("info.json", 'r')
+FileNotFoundError: [Errno 2] No such file or directory: 'info.json'
+[2022-03-11 15:39:01,252] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1514, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1857, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "C:\Users\Admin\kesco_training\app.py", line 54, in before_request
+    f.close()
+NameError: name 'f' is not defined
+[2022-03-11 15:39:41,677] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1514, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1857, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "C:\Users\Admin\kesco_training\app.py", line 54, in before_request
+    f.close()
+NameError: name 'f' is not defined
+[2022-03-11 15:40:34,591] ERROR in app: Exception on /autolabel [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1514, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1857, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "C:\Users\Admin\kesco_training\app.py", line 54, in before_request
+    f.close()
+NameError: name 'f' is not defined
+[2022-03-11 15:40:34,591] ERROR in app: Exception on /autolabel [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1514, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1857, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+  File "C:\Users\Admin\kesco_training\app.py", line 54, in before_request
+    f.close()
+NameError: name 'f' is not defined
+[2022-03-11 16:41:56,640] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 141, in train
+    train_proc = subprocess.Popen(['python', g.TRAIN_PATH, "--file_storage_path", g.FILE_STORAGE_PATH, "--data_path", data_path,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 1251, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 553, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\os.py", line 818, in fsdecode
+    filename = fspath(filename)  # Does type-checking of `filename`.
+TypeError: expected str, bytes or os.PathLike object, not int
+[2022-03-11 16:52:48,830] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 143, in train
+    train_proc = subprocess.Popen(['python', train_file, "--file_storage_path", g.FILE_STORAGE_PATH, "--data_path", data_path,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 1251, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 553, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\os.py", line 818, in fsdecode
+    filename = fspath(filename)  # Does type-checking of `filename`.
+TypeError: expected str, bytes or os.PathLike object, not int
+[2022-03-11 16:56:29,223] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 143, in train
+    train_proc = subprocess.Popen(['python', train_file, "--file_storage_path", g.FILE_STORAGE_PATH, "--data_path", data_path,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 1251, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 553, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\os.py", line 818, in fsdecode
+    filename = fspath(filename)  # Does type-checking of `filename`.
+TypeError: expected str, bytes or os.PathLike object, not int
+[2022-03-11 16:57:14,522] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 143, in train
+    train_proc = subprocess.Popen(['python', train_file, "--file_storage_path", g.FILE_STORAGE_PATH, "--data_path", data_path,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 1251, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 553, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\os.py", line 818, in fsdecode
+    filename = fspath(filename)  # Does type-checking of `filename`.
+TypeError: expected str, bytes or os.PathLike object, not int
+[2022-03-11 17:01:58,688] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 143, in train
+    train_proc = subprocess.Popen(['python', train_file, "--file_storage_path", g.FILE_STORAGE_PATH, "--data_path", data_path,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 1251, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 553, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\os.py", line 818, in fsdecode
+    filename = fspath(filename)  # Does type-checking of `filename`.
+TypeError: expected str, bytes or os.PathLike object, not int
+[2022-03-11 17:04:13,104] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 143, in train
+    train_proc = subprocess.Popen(['python', train_file, "--file_storage_path", g.FILE_STORAGE_PATH, "--data_path", data_path,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 1251, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 553, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\os.py", line 818, in fsdecode
+    filename = fspath(filename)  # Does type-checking of `filename`.
+TypeError: expected str, bytes or os.PathLike object, not int
+[2022-03-11 17:04:13,104] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 143, in train
+    train_proc = subprocess.Popen(['python', train_file, "--file_storage_path", g.FILE_STORAGE_PATH, "--data_path", data_path,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 1251, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 553, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\os.py", line 818, in fsdecode
+    filename = fspath(filename)  # Does type-checking of `filename`.
+TypeError: expected str, bytes or os.PathLike object, not int
+[2022-03-11 17:11:34,294] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 144, in train
+    train_proc = subprocess.Popen(['python', train_file, "--file_storage_path", g.FILE_STORAGE_PATH, "--data_path", data_path,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 1251, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 553, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\os.py", line 818, in fsdecode
+    filename = fspath(filename)  # Does type-checking of `filename`.
+TypeError: expected str, bytes or os.PathLike object, not int
+[2022-03-14 09:29:58,925] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 162, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-11_16h10m06s'
+[2022-03-14 09:48:50,207] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 162, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-11_16h10m06s'
+[2022-03-14 10:19:39,536] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 143, in train
+    train_proc = subprocess.Popen(['python', train_file, "--file_storage_path", g.FILE_STORAGE_PATH, "--data_path", data_path,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 1251, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\subprocess.py", line 553, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\os.py", line 818, in fsdecode
+    filename = fspath(filename)  # Does type-checking of `filename`.
+TypeError: expected str, bytes or os.PathLike object, not int
+[2022-03-14 14:10:02,391] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 162, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-11_16h10m06s'
+[2022-03-14 18:10:30,588] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 162, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-11_16h10m06s'
+[2022-03-15 12:43:08,999] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 162, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-11_16h10m06s'
+[2022-03-15 12:43:08,999] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 162, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-11_16h10m06s'
+[2022-03-15 13:30:41,510] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 344, in check_progress
+    percentage = str(int(lastest_iter / 20000 * 100 * 0.5) + 1)  # total iteration = 20000
+UnboundLocalError: local variable 'lastest_iter' referenced before assignment
+[2022-03-15 13:30:41,510] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 344, in check_progress
+    percentage = str(int(lastest_iter / 20000 * 100 * 0.5) + 1)  # total iteration = 20000
+UnboundLocalError: local variable 'lastest_iter' referenced before assignment
+[2022-03-15 13:31:03,423] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 162, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-11_16h10m06s'
+[2022-03-15 17:12:00,549] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 162, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-11_16h10m06s'
+[2022-03-16 09:15:36,650] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 162, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-11_16h04m26s'
+[2022-03-16 09:15:36,650] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 162, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-11_16h04m26s'
+[2022-03-16 09:35:53,401] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 344, in check_progress
+    percentage = str(int(lastest_iter / 20000 * 100 * 0.5) + 1)  # total iteration = 20000
+UnboundLocalError: local variable 'lastest_iter' referenced before assignment
+[2022-03-16 09:35:58,259] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 162, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-16_09h29m30s'
+[2022-03-16 12:09:41,054] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 127, in train
+    create_time = weight_info[0][0].strftime('%Y-%m-%d_%Hh%Mm%Ss')
+IndexError: list index out of range
+[2022-03-16 12:34:30,202] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 161, in train
+    training_stop(session_id=session_id, weight_id=weight_id, training_error=True)
+  File "C:\Users\Admin\kesco_training\app.py", line 233, in training_stop
+    create_time = training_list[0][0].strftime('%Y-%m-%d_%Hh%Mm%Ss')
+IndexError: list index out of range
+[2022-03-16 17:50:53,898] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 162, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-16_15h36m34s'
+[2022-03-17 13:30:54,630] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 344, in check_progress
+    percentage = str(int(lastest_iter / 20000 * 100 * 0.5) + 1)  # total iteration = 20000
+UnboundLocalError: local variable 'lastest_iter' referenced before assignment
+[2022-03-17 13:31:03,568] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 162, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-17_13h16m14s'
+[2022-03-28 11:53:30,804] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 158, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-22_14h08m08s'
+[2022-03-31 17:21:50,228] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 340, in check_progress
+    percentage = str(int(lastest_iter / 20000 * 100 * 0.5) + 1)  # total iteration = 20000
+UnboundLocalError: local variable 'lastest_iter' referenced before assignment
+[2022-03-31 17:21:50,228] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 340, in check_progress
+    percentage = str(int(lastest_iter / 20000 * 100 * 0.5) + 1)  # total iteration = 20000
+UnboundLocalError: local variable 'lastest_iter' referenced before assignment
+[2022-03-31 17:21:50,228] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 340, in check_progress
+    percentage = str(int(lastest_iter / 20000 * 100 * 0.5) + 1)  # total iteration = 20000
+UnboundLocalError: local variable 'lastest_iter' referenced before assignment
+[2022-03-31 17:22:44,662] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 158, in train
+    training_stop(session_id=session_id, weight_id=weight_id, training_error=True)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-31_17h19m27s'
+[2022-03-31 17:22:44,662] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 158, in train
+    training_stop(session_id=session_id, weight_id=weight_id, training_error=True)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-31_17h19m27s'
+[2022-03-31 17:22:44,662] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 158, in train
+    training_stop(session_id=session_id, weight_id=weight_id, training_error=True)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-31_17h19m27s'
+[2022-03-31 17:28:10,384] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 159, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-31_17h26m59s'
+[2022-03-31 17:31:24,700] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 341, in check_progress
+    percentage = str(int(lastest_iter / 20000 * 100 * 0.5) + 1)  # total iteration = 20000
+UnboundLocalError: local variable 'lastest_iter' referenced before assignment
+[2022-03-31 17:32:24,676] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 341, in check_progress
+    percentage = str(int(lastest_iter / 20000 * 100 * 0.5) + 1)  # total iteration = 20000
+UnboundLocalError: local variable 'lastest_iter' referenced before assignment
+[2022-03-31 17:33:13,125] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 341, in check_progress
+    percentage = str(int(lastest_iter / 20000 * 100 * 0.5) + 1)  # total iteration = 20000
+UnboundLocalError: local variable 'lastest_iter' referenced before assignment
+[2022-03-31 17:33:24,735] ERROR in app: Exception on /progress [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 341, in check_progress
+    percentage = str(int(lastest_iter / 20000 * 100 * 0.5) + 1)  # total iteration = 20000
+UnboundLocalError: local variable 'lastest_iter' referenced before assignment
+[2022-03-31 17:33:26,207] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 159, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-31_17h26m59s'
+[2022-03-31 17:53:12,802] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 159, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-31_17h26m59s'
+[2022-03-31 18:13:42,137] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 159, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-31_17h26m59s'
+[2022-04-01 10:04:56,682] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 159, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-03-31_17h26m59s'
+[2022-04-01 10:54:59,077] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 158, in train
+    training_stop(session_id=session_id, weight_id=weight_id, training_error=True)
+  File "C:\Users\Admin\kesco_training\app.py", line 230, in training_stop
+    create_time = training_list[0][0].strftime('%Y-%m-%d_%Hh%Mm%Ss')
+IndexError: list index out of range
+[2022-04-01 14:32:38,696] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 160, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-04-01_10h47m09s'
+[2022-04-01 15:02:31,474] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 160, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-04-01_10h47m09s'
+[2022-04-04 10:28:09,773] ERROR in app: Exception on /train [POST]
+Traceback (most recent call last):
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Admin\kesco_training\app.py", line 164, in train
+    shutil.rmtree(os.path.join(g.TRAIN_RESULTS_PATH, "efficientnet", create_time))
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 740, in rmtree
+    return _rmtree_unsafe(path, onerror)
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 599, in _rmtree_unsafe
+    onerror(os.scandir, path, sys.exc_info())
+  File "C:\Users\Admin\miniconda3\envs\kesco\lib\shutil.py", line 596, in _rmtree_unsafe
+    with os.scandir(path) as scandir_it:
+FileNotFoundError: [WinError 3] 지정된 경로를 찾을 수 없습니다: 'Z:\\private\\training\\original\\train_results\\efficientnet\\2022-04-01_13h25m49s'
