@@ -11,9 +11,11 @@ if __name__ == "__main__":
         with open(json_path, "r") as json_file:
             json_data = json.load(json_file)
 
-            json_data["imagePath"] = os.path.join("Z:\\private\\training\\original\\test_data", json_data["imagePath"])
+            json_data["imagePath"] = os.path.join(
+                "Z:\\private\\training\\original\\test_data", json_data["imagePath"]
+            )
 
             save_path = json_path
 
-            with open(save_path, 'w') as f:
+            with open(save_path, "w") as f:
                 json.dump(json_data, f, indent=4)

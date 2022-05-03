@@ -15,21 +15,26 @@ from efficientnet.model import WireClassifier
 
 
 def inference(args, clf, is_train="train"):
-    
+
     # transform
-    transform = A.Compose([
-        A.Resize(height=380, width=380),
-        A.Normalize(
-            mean=[0.485, 0.456, 0.406],
-            std=[0.229, 0.224, 0.225]),
-        ToTensorV2()
-    ])
+    transform = A.Compose(
+        [
+            A.Resize(height=380, width=380),
+            A.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+            ToTensorV2(),
+        ]
+    )
 
     # dataset
     result_path = os.path.join(args.mask_output_dir, f"{is_train}_result.csv")
     df = pd.read_csv(result_path).copy()
     dataset = CustomDataset(args, df, transform, inference=True)
-    loader = torch.utils.data.DataLoader(dataset, batch_size=args.test_batch_size, shuffle=False, num_workers=args.num_workers)
+    loader = torch.utils.data.DataLoader(
+        dataset,
+        batch_size=args.test_batch_size,
+        shuffle=False,
+        num_workers=args.num_workers,
+    )
 
     # data load
     with torch.no_grad():
@@ -44,7 +49,6 @@ def inference(args, clf, is_train="train"):
                 pred_labels = pred_scores.max(1)[1].to("cpu")
                 pred_scores = pred_scores.to("cpu").numpy()
 
-
                 for i, df_idx in enumerate(idx.numpy()):
                     pred_label = pred_labels[i].item()
                     output_0 = pred_scores[i][0].item()
@@ -53,9 +57,14 @@ def inference(args, clf, is_train="train"):
 
                     df.loc[
                         df_idx,
-                        ["pred_label", "electric_output", "flame_output", "indistinct_output"]
-                    ] = pred_label, output_0, output_1, output_2
-    
+                        [
+                            "pred_label",
+                            "electric_output",
+                            "flame_output",
+                            "indistinct_output",
+                        ],
+                    ] = (pred_label, output_0, output_1, output_2)
+
     try:
         os.remove(result_path)
     except:
@@ -77,5 +86,3 @@ def eff_inference(args):
 
     inference(args, clf, is_train="train")
     inference(args, clf, is_train="test")
-
-    

@@ -1,6 +1,7 @@
 import psutil
 import json
 
+
 def check_session(db, session_id):
     cursor = db.cursor()
     sql_pretrained_info = f"select * from sessions where session_id='{session_id}';"
@@ -19,20 +20,23 @@ def check_session(db, session_id):
 
 
 def load_txt_arr(txt_path):
-    f = open(txt_path, 'r')
+    f = open(txt_path, "r")
     lines = f.readlines()
     f.close()
     return lines
 
+
 def load_json_arr(json_path):
     lines = []
-    with open(json_path, 'r') as f:
+    with open(json_path, "r") as f:
         for line in f:
             lines.append(json.loads(line))
     return lines
 
+
 def on_terminate(proc):
     print("process {} terminated with exit code {}".format(proc, proc.returncode))
+
 
 def process_kill(pid):
     process = psutil.Process(pid).children(recursive=True)

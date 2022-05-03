@@ -1,5 +1,6 @@
 from detectron2.utils.logger import setup_logger
-setup_logger() # Setup detectron2 logger
+
+setup_logger()  # Setup detectron2 logger
 
 from detectron2 import model_zoo
 from detectron2.config import get_cfg
@@ -21,49 +22,52 @@ import pickle
 def training(args):
 
     print("Mask RCNN preprocessing...")
-    
 
-    if os.path.isfile('mask_classes.pkl'):
-        with open('mask_classes.pkl', 'rb') as f:
+    if os.path.isfile("mask_classes.pkl"):
+        with open("mask_classes.pkl", "rb") as f:
             thing_classes = pickle.load(f)
             args.mask_classes = len(thing_classes)
-            args.mask_id = thing_classes.index('wire')
+            args.mask_id = thing_classes.index("wire")
     else:
-        thing_classes = ['airplane',
-                         'banana',
-                         'baseball bat',
-                         'carrot',
-                         'dining table',
-                         'fork',
-                         'giraffe',
-                         'hot dog',
-                         'keyboard',
-                         'knife',
-                         # 'nipped',
-                         'pen',
-                         'pizza',
-                         'scissors',
-                         'skateboard',
-                         'skis',
-                         'snowboard',
-                         'spoon',
-                         'sports ball',
-                         'stop sign',
-                         'surfboard',
-                         'tennis racket',
-                         'tie',
-                         'toothbrush',
-                         'train',
-                         'truck',
-                         'wire']
-    
+        thing_classes = [
+            "airplane",
+            "banana",
+            "baseball bat",
+            "carrot",
+            "dining table",
+            "fork",
+            "giraffe",
+            "hot dog",
+            "keyboard",
+            "knife",
+            # 'nipped',
+            "pen",
+            "pizza",
+            "scissors",
+            "skateboard",
+            "skis",
+            "snowboard",
+            "spoon",
+            "sports ball",
+            "stop sign",
+            "surfboard",
+            "tennis racket",
+            "tie",
+            "toothbrush",
+            "train",
+            "truck",
+            "wire",
+        ]
+
         args.mask_classes = len(thing_classes)
-        args.mask_id = thing_classes.index('wire')
+        args.mask_id = thing_classes.index("wire")
 
     # train dataset path
     train_json_folder_orig = os.path.join(args.file_storage_path, "train_data", "json")
     train_json_folder_new = os.path.join(args.data_path, "train_data", "json")
-    train_jsons = glob.glob(os.path.join(train_json_folder_orig, "*.json")) + glob.glob(os.path.join(train_json_folder_new, "*.json"))
+    train_jsons = glob.glob(os.path.join(train_json_folder_orig, "*.json")) + glob.glob(
+        os.path.join(train_json_folder_new, "*.json")
+    )
 
     # make json file like coco dataset format
     train_collect = os.path.join(args.mask_output_dir, "train.json")
@@ -72,19 +76,27 @@ def training(args):
     # test (same with train)
     test_json_folder_orig = os.path.join(args.file_storage_path, "test_data", "json")
     test_json_folder_new = os.path.join(args.data_path, "test_data", "json")
-    test_jsons = glob.glob(os.path.join(test_json_folder_orig, "*.json")) + glob.glob(os.path.join(test_json_folder_new, "*.json"))
+    test_jsons = glob.glob(os.path.join(test_json_folder_orig, "*.json")) + glob.glob(
+        os.path.join(test_json_folder_new, "*.json")
+    )
     test_collect = os.path.join(args.mask_output_dir, "test.json")
     labelme2coco(test_jsons, test_collect, thing_classes=thing_classes)
 
     # register json file for detectron
-    register_coco_instances("train", {}, train_collect, "")  # train_collect must be coco dataset style
+    register_coco_instances(
+        "train", {}, train_collect, ""
+    )  # train_collect must be coco dataset style
     register_coco_instances("test", {}, test_collect, "")
 
     # hyperparameters tuning
     cfg = get_cfg()
-    cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x.yaml"))
-    cfg.DATASETS.TRAIN = ("train", )
-    cfg.DATASETS.TEST = ("test", )
+    cfg.merge_from_file(
+        model_zoo.get_config_file(
+            "COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x.yaml"
+        )
+    )
+    cfg.DATASETS.TRAIN = ("train",)
+    cfg.DATASETS.TEST = ("test",)
     # cfg.TEST.EVAL_PERIOD = args.mask_checkpoint
     cfg.DATALOADER.NUM_WORKERS = args.num_workers
 
@@ -95,8 +107,10 @@ def training(args):
 
     cfg.SOLVER.IMS_PER_BATCH = args.mask_batch
     cfg.SOLVER.BASE_LR = args.mask_lr  # pick a good LR
-    cfg.SOLVER.BASE_LR_END = 1e-6   # use with WarmupCosineLr
-    cfg.SOLVER.LR_SCHEDULER_NAME = "WarmupCosineLR" # WarmupCosineLR or WarmupMultiStepLR
+    cfg.SOLVER.BASE_LR_END = 1e-6  # use with WarmupCosineLr
+    cfg.SOLVER.LR_SCHEDULER_NAME = (
+        "WarmupCosineLR"  # WarmupCosineLR or WarmupMultiStepLR
+    )
     cfg.SOLVER.MAX_ITER = args.mask_iters
     cfg.SOLVER.STEPS = [5000, 10000, 15000]
     cfg.SOLVER.GAMMA = 0.5
@@ -110,14 +124,16 @@ def training(args):
         cfg.MODEL.WEIGHTS = args.mask_path
     except:
         print("Cannot load the pretrained mask model")
-        cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url("COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x.yaml")  # training initialize from model zoo
+        cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url(
+            "COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x.yaml"
+        )  # training initialize from model zoo
 
     # Call Custom Trainer
     trainer = MyTrainer(cfg)
     trainer.resume_or_load(resume=False)
 
     print(f"Training until {args.mask_iters} iterations")
-    
+
     # Training
     try:
         trainer.train()

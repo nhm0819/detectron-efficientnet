@@ -6,7 +6,7 @@ if __name__ == "__main__":
     csv_path = "Z:\\private\\training\\original\\train_data.csv"
     save_path = "Z:\\private\\training\\original\\train_data2.csv"
 
-    read = open(csv_path, 'r')
+    read = open(csv_path, "r")
     rdr = csv.reader(read)
 
     lines = []
@@ -20,8 +20,7 @@ if __name__ == "__main__":
 
     read.close()
 
-
-    write = open(save_path, 'w', newline='')
+    write = open(save_path, "w", newline="")
     wr = csv.writer(write)
     wr.writerows(lines)
 

@@ -1,6 +1,7 @@
 from torch.utils.data import Dataset
 import os
 
+
 class InferDataset(Dataset):
     def __init__(self, img_list):
         super().__init__()
@@ -27,13 +28,11 @@ class InferDataset(Dataset):
         return img_path, is_train, label
 
 
-
 class InferDataset2(Dataset):
     def __init__(self, df, is_train="train"):
         super().__init__()
         self.df = df.reset_index(drop=True).copy()
         self.is_train = is_train
-
 
     def __len__(self):
         return self.df.shape[0]

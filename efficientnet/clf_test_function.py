@@ -19,17 +19,19 @@ def test_epoch(args, model, device, test_loader, criterion, LOGGER=None):
             correct += pred.eq(target).sum().item()
 
     try:
-        accuracy = 100. * correct / data_len
+        accuracy = 100.0 * correct / data_len
     except:
-        accuracy = 100. * correct / (data_len + 1e-8)
+        accuracy = 100.0 * correct / (data_len + 1e-8)
 
-    if args.num_workers==0:
-        test_loss /= (step / 1)
+    if args.num_workers == 0:
+        test_loss /= step / 1
     try:
-        test_loss /= (step / args.num_workers)
+        test_loss /= step / args.num_workers
     except:
-        test_loss /= (step / args.num_workers)
-    LOGGER.info(f'Average loss: {test_loss:.8f}, Accuracy: {correct}/{len(test_loader.dataset)} ({accuracy:.2f}%)')
+        test_loss /= step / args.num_workers
+    LOGGER.info(
+        f"Average loss: {test_loss:.8f}, Accuracy: {correct}/{len(test_loader.dataset)} ({accuracy:.2f}%)"
+    )
 
     return test_loss, accuracy
 

@@ -1,4 +1,5 @@
 from detectron2.utils.logger import setup_logger
+
 setup_logger()
 from detectron2 import model_zoo
 from detectron2.engine import DefaultPredictor
@@ -15,11 +16,15 @@ import tqdm
 
 def get_predictor(args):
     cfg = get_cfg()
-    cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x.yaml"))
+    cfg.merge_from_file(
+        model_zoo.get_config_file(
+            "COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x.yaml"
+        )
+    )
 
     # cfg.DATASETS.TRAIN = ()
     cfg.DATALOADER.NUM_WORKERS = args.num_workers
-    cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = (8)
+    cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 8
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = args.mask_classes
 
     cfg.MODEL.WEIGHTS = args.mask_best_model
@@ -53,7 +58,9 @@ def load_mask(args, predictor, image):
     mask_0[where_0] = 255
 
     try:
-        x1, y1, x2, y2 = output.pred_boxes.tensor[wire_idx].squeeze().numpy().astype(int)
+        x1, y1, x2, y2 = (
+            output.pred_boxes.tensor[wire_idx].squeeze().numpy().astype(int)
+        )
         return mask_0[y1:y2, x1:x2]
     except:
         return mask_0
@@ -65,7 +72,7 @@ def imwrite(filename, img, params=None):
         result, img_arr = cv2.imencode(ext, img, params)
 
         if result:
-            with open(filename, mode='w+b') as f:
+            with open(filename, mode="w+b") as f:
                 img_arr.tofile(f)
                 return True
         else:
@@ -91,10 +98,9 @@ def inference(args, predictor, data_loader, type="train", renewal=False):
                     continue
                 else:
                     mask = load_mask(args, predictor, image.data.numpy()[0])
-        
+
             # cv2.imwrite(mask_image_path, mask[..., ::-1])
             imwrite(mask_image_path, mask)
-
 
 
 def mask_inference(args, renewal=False):

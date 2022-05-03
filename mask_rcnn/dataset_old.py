@@ -5,7 +5,6 @@ import numpy as np
 import detectron2.data.transforms as T
 
 
-
 class InferenceDataset(Dataset):
     def __init__(self, args, df):
         super().__init__()

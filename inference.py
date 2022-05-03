@@ -1,8 +1,9 @@
-'''
+"""
 crop mask -> save with white background
-'''
+"""
 import pandas as pd
 from detectron2.utils.logger import setup_logger
+
 setup_logger()
 import os
 import cv2
@@ -28,19 +29,30 @@ from torch.utils.data import DataLoader
 from dataset import InferDataset, InferDataset2
 
 
-
-parser = argparse.ArgumentParser(description='PyTorch Classification')
-parser.add_argument('--model_name', type=str, default="efficientnet_b4", metavar='S',
-                    help='model name')
-parser.add_argument('--mask_path', type=str, default="E:\\work\\kesco\\file_storage\\weights\\mask_rcnn_27_AP_98.01.pt", metavar='S',
-                    help='efficientnet b4 weights path')
-parser.add_argument('--clf_path', type=str, default="E:\\work\\kesco\\file_storage\\weights\\efficientnet_b4_17_loss_0.70_acc_99.16.pt", metavar='S',
-                    help='efficientnet b4 weights path')  # efficientnet_b4_17_acc_99.16_loss_0.70
-parser.add_argument('--num_workers', type=int, default=4, metavar='N',
-                    help='num workers')
-parser.add_argument('--clf_classes', type=int, default=2, metavar='N',
-                    help='clf classes')
-
+parser = argparse.ArgumentParser(description="PyTorch Classification")
+parser.add_argument(
+    "--model_name", type=str, default="efficientnet_b4", metavar="S", help="model name"
+)
+parser.add_argument(
+    "--mask_path",
+    type=str,
+    default="E:\\work\\kesco\\file_storage\\weights\\mask_rcnn_27_AP_98.01.pt",
+    metavar="S",
+    help="efficientnet b4 weights path",
+)
+parser.add_argument(
+    "--clf_path",
+    type=str,
+    default="E:\\work\\kesco\\file_storage\\weights\\efficientnet_b4_17_loss_0.70_acc_99.16.pt",
+    metavar="S",
+    help="efficientnet b4 weights path",
+)  # efficientnet_b4_17_acc_99.16_loss_0.70
+parser.add_argument(
+    "--num_workers", type=int, default=4, metavar="N", help="num workers"
+)
+parser.add_argument(
+    "--clf_classes", type=int, default=2, metavar="N", help="clf classes"
+)
 
 
 # parser.add_argument('--dataset_dir', type=str, default="E:\\work\\kesco\\raw_data\\20211008", metavar='S',
@@ -51,13 +63,16 @@ parser.add_argument('--clf_classes', type=int, default=2, metavar='N',
 #                     help='model path')
 
 
-
 def get_predictor(args):
     cfg = get_cfg()
-    cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x.yaml"))
+    cfg.merge_from_file(
+        model_zoo.get_config_file(
+            "COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x.yaml"
+        )
+    )
     cfg.DATASETS.TRAIN = ()
     cfg.DATALOADER.NUM_WORKERS = args.num_workers
-    cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = (8)
+    cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 8
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 27
 
     cfg.MODEL.WEIGHTS = args.mask_path
@@ -70,6 +85,7 @@ def get_predictor(args):
 
     predictor = DefaultPredictor(cfg)
     return predictor
+
 
 def load_mask(predictor, image_path):
     img = cv2.imread(image_path)
@@ -108,13 +124,14 @@ def load_mask(predictor, image_path):
 
     return mask_0, wire_prob
 
+
 def imwrite(filename, img, params=None):
     try:
         ext = os.path.splitext(filename)[1]
         result, n = cv2.imencode(ext, img, params)
 
         if result:
-            with open(filename, mode='w+b') as f:
+            with open(filename, mode="w+b") as f:
                 n.tofile(f)
                 return True
         else:
@@ -123,54 +140,56 @@ def imwrite(filename, img, params=None):
         print(e)
         return False
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     from coco_load import CustomCocoDetection
     from torch.utils.data import DataLoader
     from torchvision import transforms
 
     # setting
     args = parser.parse_args()
-    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     # classes
-    dict = {'electric': 0, 'flame': 1, 'indistinct': 2}
-    thing_classes = ['airplane',
-                     'banana',
-                     'baseball bat',
-                     'carrot',
-                     'dining table',
-                     'fork',
-                     'giraffe',
-                     'hot dog',
-                     'keyboard',
-                     'knife',
-                     'nipped',
-                     'pen',
-                     'pizza',
-                     'scissors',
-                     'skateboard',
-                     'skis',
-                     'snowboard',
-                     'spoon',
-                     'sports ball',
-                     'stop sign',
-                     'surfboard',
-                     'tennis racket',
-                     'tie',
-                     'toothbrush',
-                     'train',
-                     'truck',
-                     'wire']
+    dict = {"electric": 0, "flame": 1, "indistinct": 2}
+    thing_classes = [
+        "airplane",
+        "banana",
+        "baseball bat",
+        "carrot",
+        "dining table",
+        "fork",
+        "giraffe",
+        "hot dog",
+        "keyboard",
+        "knife",
+        "nipped",
+        "pen",
+        "pizza",
+        "scissors",
+        "skateboard",
+        "skis",
+        "snowboard",
+        "spoon",
+        "sports ball",
+        "stop sign",
+        "surfboard",
+        "tennis racket",
+        "tie",
+        "toothbrush",
+        "train",
+        "truck",
+        "wire",
+    ]
 
     # transform
-    transform = A.Compose([
-        A.Resize(height=380, width=380),
-        A.Normalize(
-            mean=[0.485, 0.456, 0.406],
-            std=[0.229, 0.224, 0.225]),
-        ToTensorV2()
-    ])
-
+    transform = A.Compose(
+        [
+            A.Resize(height=380, width=380),
+            A.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+            ToTensorV2(),
+        ]
+    )
 
     # detectron init
     predictor = get_predictor(args)
@@ -195,11 +214,20 @@ if __name__ == '__main__':
     #
     # infer_dataset = InferDataset(image_list)
 
-
-    f = open(f'res.csv', 'w', encoding='utf8', newline='')
+    f = open(f"res.csv", "w", encoding="utf8", newline="")
     wr = csv.writer(f)
-    wr.writerow(["path", "is_train", "label", "pred", "wire_score", "electric_output", "flame_output", "score"])
-
+    wr.writerow(
+        [
+            "path",
+            "is_train",
+            "label",
+            "pred",
+            "wire_score",
+            "electric_output",
+            "flame_output",
+            "score",
+        ]
+    )
 
     # image_list = glob.glob("E:\\work\\kesco\\raw_data\\stationary\\*.jpg") # + glob.glob("E:\\work\\kesco\\raw_data\\things\\*.jpg")
     image_list = glob.glob("E:\\work\\kesco\\raw_data\\nipper\\*.jpg")
@@ -249,21 +277,33 @@ if __name__ == '__main__':
         # masking
         # mask_path = os.path.join("E:\\work\\kesco\\file_storage\\masked_image", line[0][0])
         # mask_path = image_path.replace("raw_data", "raw_data\\masked_image")
-        mask_path = os.path.join("E:\\work\\kesco\\kesco_training\\result_dataset", os.path.basename(image_path))
+        mask_path = os.path.join(
+            "E:\\work\\kesco\\kesco_training\\result_dataset",
+            os.path.basename(image_path),
+        )
         # mask_path = mask_path.replace(os.path.basename(mask_path), f"things_{idx}.jpg")
         os.makedirs(os.path.dirname(mask_path), exist_ok=True)
 
-
-
         if isinstance(mask, int):
             mask = cv2.imread(image_path)
-            pred_label = 0 # cannot find wire
+            pred_label = 0  # cannot find wire
             output_0 = 0
             output_1 = 0
             score = 0
 
             imwrite(mask_path, mask)
-            wr.writerow([file_name, is_train, label, pred_label, wire_prob, output_0, output_1, score])
+            wr.writerow(
+                [
+                    file_name,
+                    is_train,
+                    label,
+                    pred_label,
+                    wire_prob,
+                    output_0,
+                    output_1,
+                    score,
+                ]
+            )
             continue
 
         else:
@@ -271,9 +311,8 @@ if __name__ == '__main__':
             # imwrite(mask_path, image)
             pass
 
-
         # classify
-        input = transform(image=mask[:,:,::-1])['image'].unsqueeze(0)
+        input = transform(image=mask[:, :, ::-1])["image"].unsqueeze(0)
         input = input.to(device)
 
         with torch.no_grad():
@@ -285,7 +324,17 @@ if __name__ == '__main__':
         score = torch.sigmoid(pred.max()).to("cpu").numpy().item()
         # score = F.softmax(pred).max(1).values.to("cpu").numpy().item()
 
-        wr.writerow([file_name, is_train, label, pred_label, wire_prob, output_0, output_1, score])
+        wr.writerow(
+            [
+                file_name,
+                is_train,
+                label,
+                pred_label,
+                wire_prob,
+                output_0,
+                output_1,
+                score,
+            ]
+        )
 
     f.close()
-

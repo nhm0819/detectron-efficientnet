@@ -11,7 +11,8 @@ def make_eff_weights(args):
 
     if 1:  # weight download, (0 -> off, 1 -> on)
         import numpy as np
-        with open(args.clf_best_weights, 'wb') as f:
+
+        with open(args.clf_best_weights, "wb") as f:
             weights = model.state_dict()
             weight_list = [(key, value) for (key, value) in weights.items()]
             dumy = np.array([0] * 10, dtype=np.float32)
@@ -21,7 +22,7 @@ def make_eff_weights(args):
                 for i in range(len(weight_list)):
                     key, w = weight_list[i]
                     # for k, j in enumerate(w.flatten()):
-                        # print(i, key, k, j)
+                    # print(i, key, k, j)
                 exit()
 
             if 1:
@@ -37,4 +38,4 @@ def make_eff_weights(args):
                         w = w.cpu().data.numpy()
                     w.tofile(f)
                     # print(0, idx, key, w.shape)
-        print('complte to making classifier weights file.')
+        print("complte to making classifier weights file.")

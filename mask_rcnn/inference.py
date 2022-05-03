@@ -15,7 +15,11 @@ import tqdm
 
 def get_predictor(args):
     cfg = get_cfg()
-    cfg.merge_from_file(model_zoo.get_config_file("COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x.yaml"))
+    cfg.merge_from_file(
+        model_zoo.get_config_file(
+            "COCO-InstanceSegmentation/mask_rcnn_X_101_32x8d_FPN_3x.yaml"
+        )
+    )
 
     # cfg.DATASETS.TRAIN = ()
     cfg.DATALOADER.NUM_WORKERS = args.num_workers
@@ -35,7 +39,7 @@ def imwrite(filename, img, params=None):
         result, img_arr = cv2.imencode(ext, img, params)
 
         if result:
-            with open(filename, mode='w+b') as f:
+            with open(filename, mode="w+b") as f:
                 img_arr.tofile(f)
                 return True
         else:
@@ -48,7 +52,18 @@ def imwrite(filename, img, params=None):
 def inference(args, predictor, data_loader, renewal=False, is_train="train"):
     print("extracting mask images for efficientnet training...")
 
-    result = pd.DataFrame(columns=["path", "is_train", "label", "wire_score", "pred_label", "electric_output", "flame_output", "indistinct_output"])
+    result = pd.DataFrame(
+        columns=[
+            "path",
+            "is_train",
+            "label",
+            "wire_score",
+            "pred_label",
+            "electric_output",
+            "flame_output",
+            "indistinct_output",
+        ]
+    )
 
     with tqdm.tqdm(data_loader, unit="batch") as tepoch:
         for idx, line in enumerate(tepoch):
@@ -63,14 +78,23 @@ def inference(args, predictor, data_loader, renewal=False, is_train="train"):
             for i, image_path in enumerate(image_paths):
                 # file_name = os.path.basename(image_path)
                 # mask_image_path = os.path.join(args.mask_folder, file_name) # args.mask_folder = os.path.join(args.file_storage_path, "masked_image")
-                mask_image_path = image_path.replace("public/image", "private\\training\\original")
-                mask_image_path = mask_image_path.replace("original", "original\\masked_image").replace("/", "\\")
+                mask_image_path = image_path.replace(
+                    "public/image", "private\\training\\original"
+                )
+                mask_image_path = mask_image_path.replace(
+                    "original", "original\\masked_image"
+                ).replace("/", "\\")
                 os.makedirs(os.path.dirname(mask_image_path), exist_ok=True)
-                result = result.append({"path": image_path,
-                                        "is_train": is_train,
-                                        "label": labels[i],
-                                        "wire_score": wire_probs[i]}, ignore_index=True)
-                
+                result = result.append(
+                    {
+                        "path": image_path,
+                        "is_train": is_train,
+                        "label": labels[i],
+                        "wire_score": wire_probs[i],
+                    },
+                    ignore_index=True,
+                )
+
                 if renewal or (not os.path.isfile(mask_image_path)):
                     imwrite(mask_image_path, masks[i])
                 else:
@@ -78,7 +102,7 @@ def inference(args, predictor, data_loader, renewal=False, is_train="train"):
 
     result_path = os.path.join(args.mask_output_dir, f"{is_train}_result.csv")
     result.to_csv(result_path, encoding="utf-8", index=False)
-    
+
     del result
 
 
@@ -88,7 +112,13 @@ def mask_inference(args, renewal=False):
     # train data
     train_df = pd.read_csv(args.train_csv)
     train_dataset = InferenceDataset(args, train_df)
-    train_loader = DataLoader(train_dataset, batch_size=args.mask_batch, num_workers=args.num_workers, collate_fn=make_batch, pin_memory=True)
+    train_loader = DataLoader(
+        train_dataset,
+        batch_size=args.mask_batch,
+        num_workers=args.num_workers,
+        collate_fn=make_batch,
+        pin_memory=True,
+    )
 
     inference(args, predictor, train_loader, renewal=renewal, is_train="train")
 
@@ -97,7 +127,13 @@ def mask_inference(args, renewal=False):
     # test data
     test_df = pd.read_csv(args.test_csv)
     test_dataset = InferenceDataset(args, test_df)
-    test_loader = DataLoader(test_dataset, batch_size=args.mask_batch, num_workers=args.num_workers, collate_fn=make_batch, pin_memory=True)
+    test_loader = DataLoader(
+        test_dataset,
+        batch_size=args.mask_batch,
+        num_workers=args.num_workers,
+        collate_fn=make_batch,
+        pin_memory=True,
+    )
 
     inference(args, predictor, test_loader, renewal=renewal, is_train="test")
 
