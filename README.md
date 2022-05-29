@@ -6,6 +6,7 @@
 - auto_train.py : mask rcnn 학습 -> efficientnet 학습
 - labelling.py : autolabel 기능
 
+- 실행
 ```
 waitress-serve --threads=4 app:app
 ```
