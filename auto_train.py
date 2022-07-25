@@ -161,9 +161,9 @@ parser.add_argument(
 parser.add_argument(
     "--epochs",
     type=int,
-    default=300,
+    default=200,
     metavar="N",
-    help="number of epochs to train (default: 300)",
+    help="number of epochs to train (default: 200)",
 )
 parser.add_argument(
     "--num_classes",
