@@ -281,7 +281,7 @@ def train_all(args):
         os.makedirs(args.eff_output_dir, exist_ok=True)
 
     if not args.testing:
-        if (round(args.AP, 3) + 0.2) > float(
+        if (round(args.AP, 3) + 0.4) > float(
             args.mask_path.split("_")[-1][:-3]
         ):  # 'args.AP' is made in 'mask_train.py'
             args.mask_path = args.mask_best_model
