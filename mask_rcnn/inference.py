@@ -78,12 +78,13 @@ def inference(args, predictor, data_loader, renewal=False, is_train="train"):
             for i, image_path in enumerate(image_paths):
                 # file_name = os.path.basename(image_path)
                 # mask_image_path = os.path.join(args.mask_folder, file_name) # args.mask_folder = os.path.join(args.file_storage_path, "masked_image")
-                mask_image_path = image_path.replace(
-                    "public/image", "private\\training\\original"
+                mask_image_path = image_path.replace("/", "\\")
+                mask_image_path = mask_image_path.replace(
+                    "public\\image", "private\\training\\original"
                 )
                 mask_image_path = mask_image_path.replace(
                     "original", "original\\masked_image"
-                ).replace("/", "\\")
+                )
                 os.makedirs(os.path.dirname(mask_image_path), exist_ok=True)
                 result = result.append(
                     {
