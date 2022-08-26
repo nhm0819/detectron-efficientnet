@@ -5,22 +5,9 @@ import glob
 from PIL import Image, ImageDraw
 
 
-class NpEncoder(json.JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, np.integer):
-            return int(obj)
-        elif isinstance(obj, np.floating):
-            return float(obj)
-        elif isinstance(obj, np.ndarray):
-            return obj.tolist()
-        else:
-            return super(NpEncoder, self).default(obj)
-
 
 class labelme2coco(object):
-    def __init__(
-        self, labelme_json=[], save_json_path="./coco.json", thing_classes=None
-    ):
+    def __init__(self, labelme_json=[], save_json_path="./coco.json", thing_classes=None):
         """
         :param labelme_json: the list of all labelme json file paths
         :param save_json_path: the path to save new json
@@ -42,25 +29,13 @@ class labelme2coco(object):
 
         self.save_json()
 
+
     def data_transfer(self):
         for num, json_file in enumerate(self.labelme_json):
-            with open(json_file, "r", encoding="utf-8") as fp:
+            with open(json_file, "r", encoding='utf-8') as fp:
                 data = json.load(fp)
                 self.height = data["imageHeight"]
                 self.width = data["imageWidth"]
-
-                # self.images.append(self.image(data, num))
-                # for shapes in data["shapes"]:
-                #     label = shapes["label"]
-                #     if label not in self.label:
-                #         self.label.append(label)
-                #     points = shapes["points"]
-                #
-                #     try:
-                #         self.annotations.append(self.annotation(points, label, num))
-                #         self.annID += 1
-                #     except:
-                #         pass
 
                 cnt = 0
                 for shapes in data["shapes"]:
@@ -82,6 +57,7 @@ class labelme2coco(object):
                 if cnt > 0:
                     self.images.append(self.image(data, num))
 
+
         # Sort all text labels so they are in the same order across data splits.
         self.label.sort()
         for label in self.label:
@@ -97,7 +73,7 @@ class labelme2coco(object):
         image["height"] = self.height
         image["width"] = self.width
         image["id"] = num
-        image["file_name"] = data["imagePath"].replace("/", "\\")  # .split("/")[-1]
+        image["file_name"] = data["imagePath"].replace("/", "\\") # .split("/")[-1]
         # image["file_name"] = data["imagePath"].replace('\\', '/') # .split("/")[-1]
 
         # self.height = height
@@ -175,6 +151,7 @@ class labelme2coco(object):
         data_coco["annotations"] = self.annotations
         return data_coco
 
+
     def save_json(self):
         print("saving coco json...")
         self.data_transfer()
@@ -205,8 +182,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # labelme_json = glob.glob(os.path.join(args.images, "*.json"))
-    labelme_json = glob.glob(
-        "E:\\work\\kesco\\raw_data\\file_storage\\test_data\\json\\*.json"
-    )
+    labelme_json = glob.glob("E:\\work\\kesco\\raw_data\\file_storage\\test_data\\json\\*.json")
 
     labelme2coco(labelme_json, args.output)
