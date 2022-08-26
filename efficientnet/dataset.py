@@ -16,20 +16,21 @@ class CustomDataset(Dataset):
         return self.df.shape[0]
 
     def __getitem__(self, idx: int):
-        # file_name = os.path.basename(self.df["path"][idx])
-        # img_path = os.path.join(self.args.mask_folder, file_name).replace("/", "\\")
-        img_path = (
-            self.df["path"][idx]
-            .replace("original", "original\\masked_image")
-            .replace("/", "\\")
-        )
+
+        # original image path --> masked image path
+        if "original" in self.df["path"][idx]: # original data
+            img_path = self.df["path"][idx].replace("/", "\\")
+            img_path = img_path.replace("original", "original\\masked_image")
+        else:
+            file_name = os.path.basename(self.df["path"][idx])
+            img_path = os.path.join(self.args.mask_folder, file_name).replace("/", "\\")
 
         img_array = np.fromfile(img_path, np.uint8)
         img = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
         if self.transforms:
-            img = self.transforms(image=img)["image"]
+            img = self.transforms(image=img)['image']
 
         label = self.df["label"][idx]
 
